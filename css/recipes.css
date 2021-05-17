@@ -1,30 +1,42 @@
 /* General */
-* { 
-    font-family: Inconsolata;  
-    color: #333;
-    margin: 0;
-    padding: 0;
+:root {
+    --orange: #F2994A;
+    --black: #000;
+    --light-grey: #b5b5b5;
 }
+
+@import url('fonts/Montserrat-Regular.ttf');
+@import url('fonts/Montserrat-Bold.ttf');
+@import url('fonts/Montserrat-Italic.ttf');
+@import url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+@import url('fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+
 body { 
-    padding: 10px; 
+    padding: 40px; 
     background-color: #fff;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'PT serif';
-    font-style: normal; 
-    font-variant: normal; 
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
     font-weight: bold;
 }
-h1 { font-size: 3em; }
-h3 { font-size: 2em; }
-h4 { font-size: 1.2em; }
-p {
-    font-family: 'Poppins';
-    font-size: 1.1em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 200;
+h1 { 
+    font-size: 48px; 
+    line-height: 64px;
 }
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+em { font-weight: 500; }
+strong { font-weight: 700; }
 a { text-decoration: none; }
 a, a:visited, a:focus { color: #4a4a4a; }
 a:active, a:hover { color: #727272; }
@@ -35,27 +47,86 @@ footer a:hover { text-decoration: underline; }
     clear: both;
     margin-bottom: 20px; 
 }
+.orange { color: var(--orange); }
+ul li { 
+    list-style: none; 
+    margin-bottom: 16px;
+}
+input['type=checkbox'] {
+    border-radius: 15px;
+    padding: 10px;
+}
 
 
 
-/* Overrides */
-
-
-
-
-/* -page name- Design */
-
+/* Recipes Design */
+img.hero { 
+    width: 100%; 
+    border-radius: 15px;
+}
+.description { position: relative; }
+img.icon {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    width: 14px;
+}
+.description p {
+    margin-left: 24px;
+}
+.instructions ul li { position: relative; }
+.instructions ul li input {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.instructions ul li label {
+    margin-left: 20px;
+}
+.subtitle { 
+    display: block;
+    margin: 22px 0; 
+}
+.info {
+    float: right;
+    position: relative;
+    right: -20px;
+    top: 0;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4); 
+    padding: 20px;
+}
+.info .subtitle {
+    text-transform: uppercase;
+    color: var(--light-grey);
+}
 
 
 /* Queries */
 @media only screen and (min-width: 0px) and (max-width: 600px) {
-    .clear { margin-bottom: 2%;  }
-    h1 { font-size: 2.4em; }
-    h3 { font-size: 1.4em; }
+    body { 
+        padding: 10px; 
+    }
+    .clear { margin-bottom: 2%; }
+    h1 { 
+        font-size: 26px; 
+        line-height: 30px;
+    }
+    img.icon {
+        top: 6px;
+        width: 18px;
+    }
+    .description p {
+        margin-left: 26px;
+    }
+    .info {
+        float: none;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
     .clear { margin-bottom: 2%; }
-    h1 { font-size: 2.4em; }
-    h3 { font-size: 1.4em; }
+    
 }
