@@ -28,7 +28,6 @@ h2 {
     font-size: 24px;
     line-height: 32px;
 }
-
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -53,10 +52,40 @@ ul li {
     list-style: none; 
     margin-bottom: 16px;
 }
-input['type=checkbox'] {
-    border-radius: 15px;
-    padding: 10px;
+input[type="checkbox"] {
+    opacity: 0;
+    height: 0;
+    width: 0;
 }
+input[type="checkbox"] ~ .checkbox {
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 4px;
+    border: 1px solid #222222;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    padding: 2px;
+}
+input[type="checkbox"] ~ .checkbox:after, input[type="checkbox"]:not(:checked) ~ .checkbox:after {
+    content: none;
+}
+input[type="checkbox"]:checked ~ .checkbox {
+    background: #16d150;
+    border: 0;
+}
+input[type="checkbox"]:checked ~ .checkbox:after {
+    content: '\2713';
+    position: absolute;
+    top: 9px;
+    left: 2.5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    line-height: 0;
+}
+form ul { padding-left: 0; }
 
 
 
@@ -65,25 +94,24 @@ img.hero {
     width: 100%; 
     border-radius: 15px;
 }
-.description { position: relative; }
 img.icon {
     position: absolute;
     left: 12px;
     top: 8px;
     width: 14px;
 }
-.description p {
-    margin-left: 24px;
-}
+
+.description { position: relative; }
+.description p { margin-left: 24px; }
+
+
 .instructions ul li { position: relative; }
 .instructions ul li input {
     position: absolute;
     top: 10px;
     left: 0;
 }
-.instructions ul li label {
-    margin-left: 20px;
-}
+.instructions ul li label { margin-left: 20px; }
 .instructions ol {
     list-style: none;
     counter-reset: new-counter;
@@ -104,7 +132,7 @@ img.icon {
     border-radius: 8px;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: 'Monsterrat', serif;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     color: #fff;
     background: var(--orange);    
@@ -124,9 +152,7 @@ img.icon {
     box-shadow: 0 0 5px rgba(0, 0, 0, .4); 
     padding: 40px;
 }
-.info .info-block {
-    line-height: 4px;
-}
+.info .info-block { line-height: 4px; }
 .info .info-block .subtitle {
     text-transform: uppercase;
     color: var(--light-grey);

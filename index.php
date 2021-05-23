@@ -108,25 +108,35 @@
                         </p>
 
                         <ul>
-                            <li>
-                                <input type="checkbox" name="gcc-1">
-                                <label for="gcc-1">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="gcc-1" id="gcc-1">
+                                    <label for="gcc-1" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     1 and 1/2 cups (150g) <strong> graham cracker crumbs </strong> (about 10 full sheet graham crackers)
-                                </label>
+                                </div>
                             </li>                        
-                            <li>
-                                <input type="checkbox" name="gcc-2">
-                                <label for="gcc-2">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="gcc-2" id="gcc-2">
+                                    <label for="gcc-2" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     5 Tablespoons (70g) <strong>unsalted butter</strong>, melted
-                                </label>
+                                </div>
                             </li>
-                            <li>
-                                <input type="checkbox" name="gcc-3">
-                                <label for="gcc-3">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="gcc-3" id="gcc-3">
+                                    <label for="gcc-3" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     1/4 cup (50g) <strong> granulated sugar </strong>
-                                </label>
+                                </div>
                             </li>
                         </ul>
+                        <br>
 
                         <p>
                             <em class="subtitle">
@@ -135,47 +145,68 @@
                         </p>
 
                         <ul>
-                            <li>
-                                <input type="checkbox" name="cc-1">
-                                <label for="cc-1">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="cc-1" id="cc-1">
+                                    <label for="cc-1" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     Four 8-ounce blocks (904g) full-fat <strong>cream cheese</strong>, softened to room temperature
-                                </label>
+                                </div>
                             </li>
-                            <li>
-                                <input type="checkbox" name="cc-2">
-                                <label for="cc-2">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="cc-2" id="cc-2">
+                                    <label for="cc-2" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     1 cup (200g) <strong>granulated sugar</strong>
-                                </label>
+                                </div>
                             </li>                        
-                            <li>
-                                <input type="checkbox" name="cc-3">
-                                <label for="cc-3">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="cc-3" id="cc-3">
+                                    <label for="cc-3" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     1 cup (240g) full-fat <strong>sour cream</strong> at room temperature
-                                </label>
+                                </div>
                             </li>                        
-                            <li>
-                                <input type="checkbox" name="cc-4">
-                                <label for="cc-4">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="cc-4" id="cc-4">
+                                    <label for="cc-4" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     1 teaspoon <strong>pure vanilla extract</strong>
-                                </label>
+                                </div>
                             </li>
-                            <li>
-                                <input type="checkbox" name="cc-5">
-                                <label for="cc-5">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="cc-5" id="cc-5">
+                                    <label for="cc-5" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     2 teaspoons <strong>fresh lemon juice</strong> (optional, but recommended)
-                                </label>
+                                </div>
                             </li>
-                            <li>
-                                <input type="checkbox" name="cc-6">
-                                <label for="cc-6">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="cc-6" id="cc-6">
+                                    <label for="cc-6" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     3 large <strong>eggs</strong> at room temperature
-                                </label>
+                                </div>
                             </li>
-                            <li>
-                                <input type="checkbox" name="cc-7">
-                                <label for="cc-7">
+                            <li class="row row-cols-2">
+                                <div class="col-2 col-lg-1">
+                                    <input type="checkbox" name="cc-7" id="cc-7">
+                                    <label for="cc-7" class="checkbox"></label>
+                                </div>
+                                <div class="col-10 col-lg-11">
                                     Topping suggestions: <em> salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce </em>  (recipe in notes)
-                                </label>
+                                </div>
                             </li>
                         </ul>
                     </div>
