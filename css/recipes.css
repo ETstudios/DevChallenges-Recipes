@@ -48,6 +48,7 @@ footer a:hover { text-decoration: underline; }
     margin-bottom: 20px; 
 }
 .orange { color: var(--orange); }
+.light { color: var(--light-grey); }
 ul li { 
     list-style: none; 
     margin-bottom: 16px;
@@ -83,10 +84,36 @@ img.icon {
 .instructions ul li label {
     margin-left: 20px;
 }
+.instructions ol {
+    list-style: none;
+    counter-reset: new-counter;
+    position: relative;
+}
+.instructions ol li {
+    margin-bottom: 30px;
+    counter-increment: new-counter;
+    position: relative;
+}
+.instructions ol li::before {
+    content: counter(new-counter) " ";
+    position: absolute;
+    left: -40px;
+    top: 2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Monsterrat', serif;
+    text-align: center;
+    color: #fff;
+    background: var(--orange);    
+}
 .subtitle { 
     display: block;
     margin: 22px 0; 
 }
+
 .info {
     float: right;
     position: relative;
