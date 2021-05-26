@@ -1,6 +1,3 @@
-<?php
-   
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -257,7 +254,7 @@
     
     <footer class="row">
         <div class="col-sm-12 center-text">
-            Created by <a href="https://github.com/ETstudios" target="_blank">FaeWilds</a> - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>
+            Created by <a href="https://github.com/ETstudios" target="_blank">Eric Thomas</a> - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>
         </div>
     </footer>
     
