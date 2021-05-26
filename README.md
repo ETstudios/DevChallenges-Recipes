@@ -23,7 +23,7 @@
 - [Contact](#contact)
 
 ## Overview
-<img src="https://phasma-technologies.s3.us-east-2.amazonaws.com/devchallenges/interior.jpg">
+<img src="https://phasma-technologies.s3.us-east-2.amazonaws.com/devchallenges/recipe.jpg">
 
 ### Built With
 - HTML5
